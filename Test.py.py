@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def home():
+    print("Home hit")
     # Process the email data as needed
     return jsonify({'status': 'success', "Message": "It Hitttttt"}), 200
 
@@ -31,7 +32,7 @@ def receive_email():
     }
     
     print(email_data)  # Process the email data as needed
-    
+    print("Email Recived")
     return jsonify({'status': 'success'}), 200
 
 if __name__ == "__main__":
