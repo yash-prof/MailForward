@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     print("Home hit")
     # Process the email data as needed
-    return jsonify({'status': 'success', "Message": "It Hitttttt"}), 200
+    return jsonify({'status': 'success', "Message": "It Hittttt99t"}), 200
 
 @app.route('/receive-email', methods=['POST'])
 def receive_email():
