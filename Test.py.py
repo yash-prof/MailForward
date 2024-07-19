@@ -3,10 +3,9 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
-def receive_email():
-      # Process the email data as needed
-    
-    return jsonify({'status': 'success', "Message":"It Hitttttt"}), 200
+def home():
+    # Process the email data as needed
+    return jsonify({'status': 'success', "Message": "It Hitttttt"}), 200
 
 @app.route('/receive-email', methods=['POST'])
 def receive_email():
